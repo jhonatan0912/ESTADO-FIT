@@ -1,0 +1,635 @@
+	/*DECLARACIÓN DE VARIABLES*/
+	:root {
+		--headercolor: #f6c366;
+		/*CONTENT-COLORS*/
+		--options: #ffffff;
+		--content1: rgb(137, 84, 76);
+		--content2: rgb(255, 180, 47);
+		--content3: rgb(225, 24, 31);
+		--content4: rgb(234, 153, 66);
+		--content5: rgb(184, 205, 52);
+		--content6: rgb(129, 77, 31);
+		--content7: rgb(239, 186, 19);
+		--content8: rgb(181, 126, 100);
+		--content9: rgb(200, 198, 120);
+		--content10: rgb(255, 128, 35);
+		--content11: rgb(174, 174, 174);
+		--content12: rgb(248, 185, 79);
+		--content13: rgb(247, 61, 59);
+		--content14: rgb(241, 173, 59);
+		--content15: rgb(221, 136, 23);
+		/*BUTON-COLORS*/
+		--buton1--background: rgb(213, 195, 192);
+		--buton2--background: rgb(255, 226, 175);
+		--buton3--background: rgb(244, 174, 176);
+		--buton4--background: rgb(247, 219, 189);
+		--buton5--background: rgb(230, 237, 184);
+		--buton6--background: rgb(211, 192, 176);
+		--buton7--background: rgb(249, 230, 172);
+		--buton8--background: rgb(229, 209, 200);
+		--buton9--background: rgb(235, 235, 207);
+		--buton10--background: rgb(255, 210, 178);
+		--buton11--background: rgb(226, 226, 226);
+		--buton12--background: rgb(252, 230, 193);
+		--buton13--background: rgb(251, 187, 186);
+		--buton14--background: rgb(250, 226, 186);
+		--buton15--background: rgb(243, 213, 174);
+
+	}
+
+	@import url(//db.onlinewebfonts.com/c/89cab462df01ab3846f362d717bea59b?family=Visby+Round+CF+Bold);
+
+	@font-face {
+		font-family: "Visby Round CF Bold";
+		src: url("//db.onlinewebfonts.com/t/89cab462df01ab3846f362d717bea59b.eot");
+		src: url("//db.onlinewebfonts.com/t/89cab462df01ab3846f362d717bea59b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/89cab462df01ab3846f362d717bea59b.woff2") format("woff2"),
+			url("//db.onlinewebfonts.com/t/89cab462df01ab3846f362d717bea59b.woff") format("woff"), url("//db.onlinewebfonts.com/t/89cab462df01ab3846f362d717bea59b.ttf") format("truetype"),
+			url("//db.onlinewebfonts.com/t/89cab462df01ab3846f362d717bea59b.svg#Visby Round CF Bold") format("svg");
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+		max-width: 100%;
+		font-weight: bold;
+		font-family: "Visby Round CF Bold";
+	}
+
+	.header--container {
+		width: 100%;
+		background-color: var(--headercolor);
+		background-color: var(--mycolor);
+		display: inline-flex;
+		justify-content: space-around;
+
+	}
+
+	.header--options {
+		/*margin-left:30%;]*/
+		margin-top: 3%;
+	}
+
+	.options {
+		color: var(--options);
+		text-decoration: none;
+		font-size: 30px;
+		margin: 30px 30px;
+	}
+
+	.productos {
+		max-width: 80%;
+		margin-left: 10%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+
+	.card--imagen {
+		height: 250px;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+	}
+
+	.cards {
+		margin: auto;
+		max-width: 400px;
+		height: 500px;
+		border-radius: 20px;
+		margin-top: 5%;
+		box-shadow: 5px 10px 18px #888888;
+	}
+
+	p {
+		display: inline-block;
+
+	}
+
+	.content--1 {
+		color: var(--content1);
+	}
+
+	.content--2 {
+		color: var(--content2);
+	}
+
+	.content--3 {
+		color: var(--content3);
+	}
+
+	.content--4 {
+		color: var(--content4);
+	}
+
+	.content--5 {
+		color: var(--content5);
+	}
+
+	.content--6 {
+		color: var(--content6);
+	}
+
+	.content--7 {
+		color: var(--content7);
+	}
+
+	.content--8 {
+		color: var(--content8);
+	}
+
+	.content--9 {
+		color: var(--content9);
+	}
+
+	.content--10 {
+		color: var(--content10);
+	}
+
+	.content--11 {
+		color: var(--content11);
+	}
+
+	.content--12 {
+		color: var(--content12);
+	}
+
+	.content--13 {
+		color: var(--content13);
+	}
+
+	.content--14 {
+		color: var(--content14);
+	}
+
+	.content--15 {
+		color: var(--content15);
+	}
+
+	.cards--content {
+		max-width: 80%;
+		margin-left: 10%;
+		margin-top: 4%;
+	}
+
+	.order--now {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 5%;
+		height: 50px;
+	}
+
+	#button--1 {
+		background-color: var(--buton1--background);
+		text-decoration: none;
+		border-radius: 30px;
+		height: 40px;
+		line-height: 40px;
+		width: 150px;
+		text-align: center;
+		box-shadow: 2px 2px rgb(236, 236, 236);
+
+	}
+
+	#button--2 {
+		background-color: var(--buton2--background);
+		text-decoration: none;
+		border-radius: 30px;
+		height: 40px;
+		line-height: 40px;
+		width: 150px;
+		text-align: center;
+		box-shadow: 2px 2px rgb(236, 236, 236);
+	}
+
+	#button--3 {
+		background-color: var(--buton3--background);
+		text-decoration: none;
+		border-radius: 30px;
+		height: 40px;
+		line-height: 40px;
+		width: 150px;
+		text-align: center;
+		box-shadow: 2px 2px rgb(236, 236, 236);
+	}
+
+	#button--4 {
+		background-color: var(--buton4--background);
+		text-decoration: none;
+		border-radius: 30px;
+		height: 40px;
+		line-height: 40px;
+		width: 150px;
+		text-align: center;
+		box-shadow: 2px 2px rgb(236, 236, 236);
+	}
+
+	#button--5 {
+		background-color: var(--buton5--background);
+		text-decoration: none;
+		border-radius: 30px;
+		height: 40px;
+		line-height: 40px;
+		width: 150px;
+		text-align: center;
+		box-shadow: 2px 2px rgb(236, 236, 236);
+	}
+
+	#button--6 {
+		background-color: var(--buton6--background);
+		text-decoration: none;
+		border-radius: 30px;
+		height: 40px;
+		line-height: 40px;
+		width: 150px;
+		text-align: center;
+		box-shadow: 2px 2px rgb(236, 236, 236);
+	}
+
+	#button--7 {
+		background-color: var(--buton7--background);
+		text-decoration: none;
+		border-radius: 30px;
+		height: 40px;
+		line-height: 40px;
+		width: 150px;
+		text-align: center;
+		box-shadow: 2px 2px rgb(236, 236, 236);
+	}
+
+	#button--8 {
+		background-color: var(--buton8--background);
+		text-decoration: none;
+		border-radius: 30px;
+		height: 40px;
+		line-height: 40px;
+		width: 150px;
+		text-align: center;
+		box-shadow: 2px 2px rgb(236, 236, 236);
+	}
+
+	#button--9 {
+		background-color: var(--buton9--background);
+		text-decoration: none;
+		border-radius: 30px;
+		height: 40px;
+		line-height: 40px;
+		width: 150px;
+		text-align: center;
+		box-shadow: 2px 2px rgb(236, 236, 236);
+	}
+
+	#button--10 {
+		background-color: var(--buton10--background);
+		text-decoration: none;
+		border-radius: 30px;
+		height: 40px;
+		line-height: 40px;
+		width: 150px;
+		text-align: center;
+		box-shadow: 2px 2px rgb(236, 236, 236);
+	}
+
+	#button--11 {
+		background-color: var(--buton11--background);
+		text-decoration: none;
+		border-radius: 30px;
+		height: 40px;
+		line-height: 40px;
+		width: 150px;
+		text-align: center;
+		box-shadow: 2px 2px rgb(236, 236, 236);
+	}
+
+	#button--12 {
+		background-color: var(--buton12--background);
+		text-decoration: none;
+		border-radius: 30px;
+		height: 40px;
+		line-height: 40px;
+		width: 150px;
+		text-align: center;
+		box-shadow: 2px 2px rgb(236, 236, 236);
+	}
+
+	#button--13 {
+		background-color: var(--buton13--background);
+		text-decoration: none;
+		border-radius: 30px;
+		height: 40px;
+		line-height: 40px;
+		width: 150px;
+		text-align: center;
+		box-shadow: 2px 2px rgb(236, 236, 236);
+	}
+
+	#button--14 {
+		background-color: var(--buton14--background);
+		text-decoration: none;
+		border-radius: 30px;
+		height: 40px;
+		line-height: 40px;
+		width: 150px;
+		text-align: center;
+		box-shadow: 2px 2px rgb(236, 236, 236);
+
+	}
+
+	#button--15 {
+		background-color: var(--buton15--background);
+		text-decoration: none;
+		border-radius: 30px;
+		height: 40px;
+		line-height: 40px;
+		width: 150px;
+		text-align: center;
+		box-shadow: 2px 2px rgb(236, 236, 236);
+
+	}
+
+	.content--1--star {
+		color: var(--content1);
+		font-size: 25px;
+	}
+
+	.content--1--price {
+		color: var(--content1);
+		font-size: 20px;
+		float: right;
+		line-height: 35px;
+	}
+
+	.content--1--title {
+		color: var(--content1);
+		font-size: 25px;
+	}
+
+	/*style2card*/
+	.content--2--star {
+		color: var(--content2);
+		font-size: 25px;
+	}
+
+	.content--2--price {
+		color: var(--content2);
+		font-size: 20px;
+		float: right;
+		line-height: 30px;
+	}
+
+	.content--2--title {
+		color: var(--content2);
+		font-size: 25px;
+	}
+
+	/*style3card*/
+	.content--3--star {
+		color: var(--content3);
+		font-size: 25px;
+	}
+
+	.content--3--price {
+		color: var(--content3);
+		font-size: 20px;
+		float: right;
+		line-height: 30px;
+	}
+
+	.content--3--title {
+		color: var(--content3);
+		font-size: 25px;
+	}
+
+	/*style4card*/
+	.content--4--star {
+		color: var(--content4);
+		font-size: 25px;
+	}
+
+	.content--4--price {
+		color: var(--content4);
+		font-size: 20px;
+		float: right;
+		line-height: 30px;
+	}
+
+	.content--4--title {
+		color: var(--content4);
+		font-size: 25px;
+	}
+
+	/*style5card*/
+	.content--5--star {
+		color: var(--content5);
+		font-size: 25px;
+	}
+
+	.content--5--price {
+		color: var(--content5);
+		font-size: 20px;
+		float: right;
+		line-height: 30px;
+	}
+
+	.content--5--title {
+		color: var(--content5);
+		font-size: 25px;
+	}
+
+	/*style6card*/
+	.content--6--star {
+		color: var(--content6);
+		font-size: 25px;
+	}
+
+	.content--6--price {
+		color: var(--content6);
+		font-size: 20px;
+		float: right;
+		line-height: 30px;
+	}
+
+	.content--6--title {
+		color: var(--content6);
+		font-size: 25px;
+	}
+
+	/*style7card*/
+	.content--7--star {
+		color: var(--content7);
+		font-size: 25px;
+	}
+
+	.content--7--price {
+		color: var(--content7);
+		font-size: 20px;
+		float: right;
+		line-height: 30px;
+	}
+
+	.content--7--title {
+		color: var(--content7);
+		font-size: 25px;
+	}
+
+	/*style8card*/
+	.content--8--star {
+		color: var(--content8);
+		font-size: 25px;
+	}
+
+	.content--8--price {
+		color: var(--content8);
+		font-size: 20px;
+		float: right;
+		line-height: 30px;
+	}
+
+	.content--8--title {
+		color: var(--content8);
+		font-size: 25px;
+	}
+
+	/*style9card*/
+	.content--9--star {
+		color: var(--content9);
+		font-size: 25px;
+	}
+
+	.content--9--price {
+		color: var(--content9);
+		font-size: 20px;
+		float: right;
+		line-height: 30px;
+	}
+
+	.content--9--title {
+		color: var(--content9);
+		font-size: 25px;
+	}
+
+	/*style10card*/
+	.content--10--star {
+		color: var(--content10);
+		font-size: 25px;
+	}
+
+	.content--10--price {
+		color: var(--content10);
+		font-size: 20px;
+		float: right;
+		line-height: 30px;
+	}
+
+	.content--10--title {
+		color: var(--content10);
+		font-size: 25px;
+	}
+
+	/*style11card*/
+	.content--11--star {
+		color: var(--content11);
+		font-size: 25px;
+	}
+
+	.content--11--price {
+		color: var(--content11);
+		font-size: 20px;
+		float: right;
+		line-height: 30px;
+	}
+
+	.content--11--title {
+		color: var(--content11);
+		font-size: 25px;
+	}
+
+	/*style12card*/
+	.content--12--star {
+		color: var(--content12);
+		font-size: 25px;
+	}
+
+	.content--12--price {
+		color: var(--content12);
+		font-size: 20px;
+		float: right;
+		line-height: 30px;
+	}
+
+	.content--12--title {
+		color: var(--content12);
+		font-size: 25px;
+	}
+
+	/*style13card*/
+	.content--13--star {
+		color: var(--content13);
+		font-size: 25px;
+	}
+
+	.content--13--price {
+		color: var(--content13);
+		font-size: 20px;
+		float: right;
+		line-height: 30px;
+	}
+
+	.content--13--title {
+		color: var(--content13);
+		font-size: 25px;
+	}
+
+	/*style14card*/
+	.content--14--star {
+		color: var(--content14);
+		font-size: 25px;
+	}
+
+	.content--14--price {
+		color: var(--content14);
+		font-size: 20px;
+		float: right;
+		line-height: 30px;
+	}
+
+	.content--14--title {
+		color: var(--content14);
+		font-size: 25px;
+	}
+
+	/*style15card*/
+	.content--15--star {
+		color: var(--content15);
+		font-size: 25px;
+	}
+
+	.content--15--price {
+		color: var(--content15);
+		font-size: 20px;
+		float: right;
+		line-height: 30px;
+	}
+
+	.content--15--title {
+		color: var(--content15);
+		font-size: 25px;
+	}
+
+	@media (max-width: 600px) {
+		.header--container {
+			width: auto;
+		}
+
+		body {
+			background-color: black;
+		}
+
+		.order--now {
+			margin-top: 1%;
+		}
+	}
